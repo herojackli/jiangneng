@@ -58,7 +58,8 @@ export const constantRoutes = [{
     path: '/auth-redirect',
     component: (resolve) => require(['@/views/login/auth-redirect'], resolve),
     hidden: true
-  }
+  },
+ 
 ]
 
 const createRouter = () => new Router({
@@ -84,4 +85,5 @@ export function resetRouter() {
   router.matcher = newRouter.matcher // reset router
 }
 
+console.log(router)
 export default router

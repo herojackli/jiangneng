@@ -75,6 +75,22 @@ const baseRouter = [{
       zhTitle: '流程详情',
       icon: 'icon-ym icon-ym-workFlow',
     }
-  }
+  },
+  // {
+  //   path: '/systemMangement',
+  //   component: (resolve) => require(['@/views/extend/proinfo_systemManagement'], resolve),
+  //   hidden: true
+  // },
+  {
+    path: '/systemMangement',
+    component: (resolve) => require(['@/views/extend/proinfo_systemManagement'], resolve),
+    name: 'systemMangement',
+    meta: {
+      title: 'dashboard',
+      icon: 'icon-ym icon-ym-generator-kanban',
+      affix: true,
+      zhTitle: '制度管理'
+    }
+  },
 ]
 export default baseRouter
